@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <!--Font awesome icon-->
+            <script src="https://kit.fontawesome.com/3f65e83df2.js" crossorigin="anonymous"></script>
+
+            <!--Font awesome cdnjs-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <!--Compiled and minified CSS-->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+            <!--link CSS-->
+            <link rel="stylesheet" href="grid.css">
+    <title>Grid</title>
+</head>
+<body>
+        <div class="row container">
+            <nav class="responsive-nav transparent">
+                <div class="nav-wrapper">
+                                        <!-- Dropdown Structure -->
+                                        <ul id="dropdown2" class="dropdown-content black-text center-align">Gifts<br>
+                                            <li><a href="#!">Partner in Life</a></li>
+                                            <li><a href="#!">Parents</a></li>
+                                        </ul>
+                                        <ul id="dropdown3" class="dropdown-content black-text center-align">Occasion<br>
+                                            <li><a href="#!">Birthday</a></li>
+                                            <li><a href="#!">Anniversary</a></li>
+                                            <li><a href="#!">Valentines</a></li>
+                                            <li><a href="#!">Grand Opening</a></li>
+                                        </ul>
+                    <i class="fa-brands fa-slack purple-text" style="margin-left: 30px;">Beauty Blooms</i>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa-solid fa-bars black-text"></i>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-left: 30px">
+                        <li style="margin-left: 50px"><a href="grid.html" class="black-text">Home</a></li>
+                        <li style="margin-left: 30px"><a href="#" class="dropdown-trigger black-text" data-target="dropdown3">Occasions</a></li>
+                        <li style="margin-left: 30px"><a href="#" class="dropdown-trigger black-text" data-target="dropdown2">Gifts</a></li>
+                    </ul>
+                </div>
+            </nav>
+        <!--Sidenav structure-->
+        <ul class="sidenav" id="mobile-demo">
+            <br>
+            <i class="fa-brands fa-slack" style="margin-left: 150px;"></i>
+            <li class="red-text text-red center">Beauty Blooms</li>
+            <li style="margin-left: 30px"><a href="grid.html">Home</a></li>
+            <li style="margin-left: 30px"><a href="#">Occasions</a></li>
+            <li style="margin-left: 30px"><a href="#">Gifts</a></li>
+        </ul>
+        <br>
+    <!-- Page Layout here -->
+    <div class="row">
+        <div class="col s5">
+            <h5 class="right-align red-text" style="margin-right: 50px">QUICK GIFT FINDER</h5>
+        </div>
+        <div class="input-field col s3">
+            <select>
+            <option value="" disabled selected></option>
+            <option value="1">Birthday</option>
+            <option value="2">Anniversary</option>
+            <option value="3">Valentines</option>
+            <option value="4">Grand Opening</option>
+            </select>
+            <label>Select your Occasion</label>
+        </div>
+        <div class="input-field col s3">
+            <select>
+            <option value="" disabled selected></option>
+            <option value="1">All</option>
+            <option value="2">Below 1,500.00</option>
+            <option value="3">Above 1,500.00</option>
+            </select>
+            <label>Select Budget</label>
+        </div>
+        <div class="input-field col s1">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Filter</button>
+        </div>
+    </div>
+        <div class="row">
+            <div id="birthday" class="col s12 m12 l6 section scrollspy">
+                    <img src="bundle1.png" alt="Avatar" class="image">
+                    <div class="middle">
+                        <button class="text">Show More</button>
+                    </div>
+                <p class="flow-text white-text center-align" style="background: green">Birthday Bundles</p>
+            </div>
+            <div class="col s12 m12 l6">
+                <img src="bundle2.png" alt="Avatar" class="image">
+                <div class="middle">
+                    <button class="text">Show More</button>
+                </div>
+            <p class="flow-text white-text center-align" style="background: green">Anniversary Bundles</p>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col s12 m6 l3">
+                    <img src="chocolate.png" alt="Avatar" class="image">
+                    <div class="middle">
+                        <button class="text">Show More</button>
+                    </div>
+                <p class="flow-text white-text center-align" style="background: green">Chocolate Bouquets</p>
+            </div>
+            <div class="col s12 m6 l3">
+                <img src="below1k.png" alt="Avatar" class="image">
+                <div class="middle">
+                    <button class="text">Show More</button>
+                </div>
+            <p class="flow-text white-text center-align" style="background: green">Below 1,500</p>
+            </div>
+            <div class="col s12 m6 l3">
+                <img src="preserved.png" alt="Avatar" class="image">
+                <div class="middle">
+                    <button class="text">Show More</button>
+                </div>
+            <p class="flow-text white-text center-align" style="background: green">Preserved Flowers</p>
+            </div>   
+            <ul class="section table-of-contents center">
+                <li><a href="" class="flow-text red-text">About us</a></li>
+                <li><a href="">Card Message Ideas</a></li>
+                <li><a href="">Care Instructions</a></li>
+                <li><a href="#best">Best Seller</a></li>
+                <li><a href="">Reviews</a></li>
+                <li><a href="#birthday">Birthday Flowers</a></li>
+                <li><a href="">Cake Delivery</a></li>
+                <li><a href="">Anniversary Gift</a></li>
+                <li><a href="">Customer Service</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Terms & Condition</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col s12 m12 l6">
+                <img src="birthday.png" alt="Avatar" class="image">
+                <div class="middle">
+                    <button class="text">Show More</button>
+                </div>
+            <p class="flow-text white-text center-align" style="background: green">Birthday Cakes</p>
+        </div>
+            <div class="col s12 m6 l3">
+                <img src="basket.png" alt="Avatar" class="image">
+                <div class="middle">
+                    <button class="text">Show More</button>
+                </div>
+            <p class="flow-text white-text center-align" style="background: green">Flower Basket</p>
+            </div>  
+            <ul class="section center">
+                <li><a href="" class="flow-text red-text">Contact Us:</a></li><br>
+                <li><a href="" class="black-text">Address:<br> Sala Cabuyao Laguna</a></li><br>
+                <li><a href="" class="black-text">Phone:<br> +63 9125 3582 65</a></li><br>
+                <li><a href="" class="black-text">Store Hours:<br> Mon-Sun, 9am-6pm</a></li><br>
+                <li><a href="" class="black-text">Email:<br> juvilynytang@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h2 id="best" class="red-text center section scrollspy">Best Seller</h2>
+            </div>
+            <div class="col s12 m6 l3 card-panel purple lighten-4">
+                    <img src="best1.png" alt="Avatar" class="image">
+                    <div class="middle">
+                        <button class="text black">Buy now</button>
+                    </div>
+                <p class="center-align">La Vie En Rose</p>
+                <p class="center-align">1,339.00</p>
+            </div>
+            <div class="col s12 m6 l3 card-panel pink lighten-4">
+                <img src="best2.png" alt="Avatar" class="image">
+                <div class="middle">
+                    <button class="text black">Buy now</button>
+                </div>
+            <p class="center-align">Hot Romance</p>
+            <p class="center-align">1,389.00</p>
+            </div>
+            <div class="col s12 m6 l3 card-panel red lighten-4">
+                <img src="best3.png" alt="Avatar" class="image">
+                <div class="middle">
+                    <button class="text black">Buy now</button>
+                </div>
+            <p class="center-align">Pink Puff</p>
+            <p class="center-align">1,289.00</p>
+            </div>   
+            <div class="col s12 m6 l3 card-panel lime lighten-4">
+                <img src="best4.png" alt="Avatar" class="image">
+                <div class="middle">
+                    <button class="text black">Buy now</button>
+                </div>
+            <p class="center-align">La Vie En Rose Twist</p>
+            <p class="center-align">2,099.00</p>
+            </div> 
+
+
+
+
+    </div>
+        <!--Jquery CDN-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.parallax').parallax();
+                // slider init
+                $('.slider').slider({
+                duration: 1000,
+                interval: 8000
+                });
+                $('select').formSelect();
+                M.updateTextFields();
+                $(".dropdown-trigger").dropdown({
+                hover: 'false'
+                });
+                // Sidenav init
+                $('.sidenav').sidenav();
+                $('.scrollspy').scrollSpy();
+            });
+        </script>
+</body>
+</html>
